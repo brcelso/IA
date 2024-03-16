@@ -16,11 +16,11 @@ const Header = () => {
       <header>
         <div className="container mx-auto px-6 py-3">
           <div className="flex items-center justify-between">
-            <Link href="/">
-              <div className="w-full text-green-500 text-2xl font-semibold cursor-pointer">
-                MongoStore
+            
+              <div className="w-full text-green-500 text-3xl font-semibold cursor-pointer">
+              <Link href="/">Árvore da Ascensão</Link>
               </div>
-            </Link>
+            
             <div className="flex items-center justify-end w-full">
               <button className="text-gray-600 focus:outline-none mx-4 sm:mx-0">
                 <ShoppingCartIcon

@@ -7,7 +7,7 @@ const Hero = () => {
   return (
     <div className="h-96 rounded-md overflow-hidden bg-cover bg-center relative">
       <Image
-        src="/images/hero.jpg"
+        src="/images/tree.jpg"
         alt="Hero Image"
         className="absolute z-0"
         fill
