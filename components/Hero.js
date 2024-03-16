@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "next/legacy/image";
+import Image from "next/image";
 import Link from "next/link";
 import { ArrowNarrowRightIcon } from "@heroicons/react/outline";
 
@@ -9,10 +9,12 @@ const Hero = () => {
       <Image
         src="/images/hero.jpg"
         alt="Hero Image"
-        layout="fill"
-        objectFit="cover"
         className="absolute z-0"
-      />
+        fill
+        sizes="100vw"
+        style={{
+          objectFit: "cover"
+        }} />
       <div className="bg-gray-900 bg-opacity-60 flex items-center h-full absolute w-full z-10">
         <div className="px-10 max-w-xl">
           <h2 className="text-2xl text-white font-semibold">Tech Shirts</h2>

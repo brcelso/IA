@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "next/legacy/image";
+import Image from "next/image";
 import {
   XIcon,
   PlusCircleIcon,
@@ -29,10 +29,13 @@ const Cart = ({ isCartOpen, setIsCartOpen }) => {
             src="/images/react.jpg"
             height={80}
             width={80}
-            objectFit="cover"
             className="rounded"
             alt="React T-Shirt"
-          />
+            style={{
+              maxWidth: "100%",
+              height: "auto",
+              objectFit: "cover"
+            }} />
           <div className="mx-3">
             <h3 className="text-sm text-gray-600">React T-Shirt</h3>
             <div className="flex items-center mt-2">
@@ -54,10 +57,13 @@ const Cart = ({ isCartOpen, setIsCartOpen }) => {
             src="/images/html.jpg"
             height={80}
             width={80}
-            objectFit="cover"
             className="rounded"
             alt="HTML T-Shirt"
-          />
+            style={{
+              maxWidth: "100%",
+              height: "auto",
+              objectFit: "cover"
+            }} />
           <div className="mx-3">
             <h3 className="text-sm text-gray-600">HTML T-Shirt</h3>
             <div className="flex items-center mt-2">
@@ -79,10 +85,13 @@ const Cart = ({ isCartOpen, setIsCartOpen }) => {
             src="/images/mongodb.png"
             height={80}
             width={80}
-            objectFit="cover"
             className="rounded"
             alt="MongoDB T-Shirt"
-          />
+            style={{
+              maxWidth: "100%",
+              height: "auto",
+              objectFit: "cover"
+            }} />
           <div className="mx-3">
             <h3 className="text-sm text-gray-600">MongoDB T-Shirt</h3>
             <div className="flex items-center mt-2">

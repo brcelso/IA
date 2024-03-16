@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "next/legacy/image";
+import Image from "next/image";
 import { PlusCircleIcon, MinusCircleIcon } from "@heroicons/react/outline";
 
 const ProductDetail = ({ product }) => {
@@ -9,10 +9,12 @@ const ProductDetail = ({ product }) => {
         <Image
           src={product.image}
           alt={product.name}
-          layout="fill"
-          objectFit="cover"
           className="absolute z-0 rounded"
-        />
+          fill
+          sizes="100vw"
+          style={{
+            objectFit: "cover"
+          }} />
       </div>
       <div className="w-full max-w-lg mx-auto mt-5 md:ml-8 md:mt-0 md:w-1/2">
         <h3 className="text-gray-700 uppercase text-lg">{product.name}</h3>
