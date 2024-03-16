@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import { ShoppingCartIcon } from "@heroicons/react/outline";
 
 const Product = ({ product }) => {
